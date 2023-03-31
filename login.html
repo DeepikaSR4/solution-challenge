@@ -7,8 +7,25 @@
     <title>Tutor Poool</title>
     <link href="style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+	<script src="firebase.js"></script>
 </head>
 <body>
     <h1 class="ml-10 mt-10 mb-3 text-3xl">Tutor Pool</h1>
+
+    <h1>Login</h1>
+	<form>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" required>
+		<button type="submit" id="loginBtn">Login</button>
+	</form>
+	<p id="errorMessage"></p>
+
+
+    <script src="script.js" ></script>
 </body>
 </html>
